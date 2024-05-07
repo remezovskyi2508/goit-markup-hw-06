@@ -329,9 +329,6 @@ main {
 .portfolio-item {
   display: flex;
   flex-wrap: wrap;
-}
-
-.portfolio-item {
   column-gap: 24px;
   row-gap: 48px;
 }
@@ -892,6 +889,7 @@ main {
   }
   .container {
     width: 100%;
+    max-width: 320px;
     padding: 0 16px;
   }
   .heroes-name {
@@ -940,6 +938,30 @@ main {
   .team-card {
     width: 264px;
   }
+
+  .portfolio-item {
+    justify-content: center;
+  }
+
+  .portfolio-box img {
+    width: 288px;
+    height: 280px;
+  }
+
+  .portfolio-list {
+    width: 100%;
+    max-width: 288px;
+  }
+
+  .portfolio-card .name-block {
+    text-align: left;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  .footer-container {
+    display: block;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 1158px) {
@@ -969,12 +991,24 @@ main {
   .menu-overlay {
     display: none;
   }
-  .container {
+  .portfolio-item {
+    justify-content: center;
+  }
+  .portfolio-box img {
+    width: 356px;
+    height: 300px;
+  }
+
+  .portfolio-list {
     width: 100%;
-    padding: 0 16px;
+    max-width: 356px;
   }
 }
 @media (min-width: 768px) and (max-width: 1158px) {
+  .container {
+    max-width: 768px;
+    width: 100%;
+  }
   .nav-logo-web {
     margin-right: 120px;
   }
@@ -996,6 +1030,9 @@ main {
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
+  }
+  .heroes {
+    padding: 112px 0;
   }
   .name-block {
     text-align: left;
