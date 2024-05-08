@@ -385,6 +385,9 @@ main {
 }
 
 .footer-container {
+}
+
+.footer-wrapper {
   display: flex;
   align-items: baseline;
 }
@@ -915,7 +918,7 @@ main {
     flex-direction: column;
     gap: 72px;
   }
-  .name-block {
+  .advantages-card .name-block {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
@@ -959,6 +962,13 @@ main {
   .footer {
     padding: 96px 0;
   }
+  .footer-wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 72px;
+  }
   .footer-container {
     flex-direction: column;
     text-align: center;
@@ -995,6 +1005,12 @@ main {
 @media (min-width: 320px) and (max-width: 1158px) {
   .advantages-icon {
     display: none;
+  }
+  .portfolio-card .name-block {
+    text-align: left;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
   }
   .name-block {
     font-weight: 700;
@@ -1096,9 +1112,22 @@ main {
     gap: 24px;
     row-gap: 62px;
   }
-  .footer-container {
-    flex-direction: flex;
-    gap: 24px;
+  .footer {
+    padding: 96px 0;
+  }
+  .footer-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 72px;
+    column-gap: 24px;
+    margin-left: 92px;
+    margin-right: 148px;
+  }
+  .footer-content {
+  }
+  .footer-subscribe {
+    width: 100%;
+    max-width: 453px;
   }
 }
 /*
